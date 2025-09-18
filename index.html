@@ -1,221 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Rescate animal - Salvando Patitas 🐾">
-    <meta name="author" content="Paolo Bracamonte">
-    <meta name="keywords" content="Rescate animal, perros, gatos, adopción, voluntariado">
-    <title>Salvando Patitas 🐾</title>        
+  <meta charset="utf-8">
+  <title>Salvando Patitas 🐾</title>
+  <meta name="description" content="Rescate animal - Salvando Patitas 🐾">
+  <meta name="author" content="Paolo Bracamonte">
+  <meta name="keywords" content="Rescate animal, perros, gatos, adopción, voluntariado, donaciones">
+  <style>
+    body {margin:0;font-family:Arial,sans-serif;background:#f4faff;color:#333;}
+    header {background:#1829A1;padding:15px 40px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+    header img{width:55px;border-radius:50%;}
+    nav a button{margin:5px;padding:10px 15px;border:none;background:#F2C94C;border-radius:8px;cursor:pointer;font-weight:bold;transition:.3s;}
+    nav a button:hover{background:#F2994A;color:white;}
+    .hero{text-align:center;padding:60px 20px;background:linear-gradient(to right,#8BE5F7,#F6F6F6);}
+    .hero img{max-width:450px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,0.2);}
+    .section{padding:60px 20px;text-align:center;}
+    .section h2{margin-bottom:20px;color:#1829A1;}
+    .card-container{display:flex;flex-wrap:wrap;justify-content:center;gap:25px;margin-top:20px;}
+    .card{background:white;border-radius:15px;padding:20px;max-width:300px;box-shadow:0 4px 12px rgba(0,0,0,0.2);transition:.3s;}
+    .card:hover{transform:translateY(-5px);}
+    .card img,.card video{width:100%;border-radius:12px;margin-bottom:15px;}
+    .card button{margin-top:10px;padding:10px 15px;border:none;background:#1829A1;color:white;border-radius:8px;cursor:pointer;font-weight:bold;transition:.3s;}
+    .card button:hover{background:#0f1d75;}
+    form{max-width:500px;margin:20px auto;text-align:left;background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.2);}
+    form input,form textarea{width:100%;padding:10px;margin-bottom:15px;border:1px solid #ccc;border-radius:8px;}
+    .map-container{text-align:center;margin:40px auto;}
+    .map-container iframe{width:90%;height:400px;border:0;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.2);}
+    footer{background:#1829A1;color:white;text-align:center;padding:20px;margin-top:40px;}
+    .social a{margin:0 10px;color:white;text-decoration:none;font-weight:bold;}
+  </style>
 </head>
-<body bgcolor="#8BE5F7">
-    <!-- Cabecera -->
-    <header>
-        <table width="100%" bgcolor="#1829A1">
-            <tr>
-                <td width="10%" align="center">
-                    <a href="index.html">
-                        <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/dog-1209621_1280.png" alt="Logo Salvando Patitas" width="50%"/>
-                    </a>
-                </td>
-                <td width="30%">
-                    <h2>
-                        <font color="white">Salvando Patitas 🐾</font>
-                    </h2>
-                </td>
-                <td width="60%">
-                    <nav align="right">
-                        <a href="index.html"><button>🏠 Inicio</button></a>
-                        <a href="page/acerca_de.html"><button>👤 Acerca de</button></a>
-                        <a href="page/adopciones.html"><button>🐶 Adopciones</button></a>
-                        <a href="page/voluntariado.html"><button>🤝 Voluntariado</button></a>
-                        <a href="page/contacto.html"><button>📩 Contacto</button></a>
-                    </nav>
-                </td>
-            </tr>
-        </table>
-    </header>
-   
-    <!-- Cuerpo -->
-    <main>
-        <!-- Apartado banner -->
-        <hr>
-        <section>
-            <table width="100%">
-                <tr>
-                    <td width="5%"></td>
-                    <td width="50%" align="center">
-                        <h1>Bienvenido a <strong>Salvando Patitas</strong> 🐾</h1>
-                        <h3>Refugio y rescate animal</h3>
-                        <p>
-                            Somos una organización dedicada al rescate, cuidado y adopción responsable 
-                            de perros y gatos en situación de abandono. Nuestro objetivo es brindarles 
-                            una nueva oportunidad de vida en hogares llenos de amor.  
-                            <a target="_blank" href="page/acerca_de.html">Accede a más información</a>
-                        </p>
-                    </td>
-                    <td width="5%"></td>
-                    <td width="40%">
-                        <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_1280.jpg" alt="Perrito feliz en adopción" width="100%"/>
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <hr>
-        
-        <!-- Apartado Adopciones -->
-        <section>
-            <h1 align="center">🐕 Adopciones Disponibles</h1>
-            <table width="100%" cellspacing="20px">
-                <tr>
-                    <td width="5%"></td>
-                    
-                    <td width="15%" bgcolor="#ffffff">
-                        <figure>
-                            <img width="100%" src="https://cdn.pixabay.com/photo/2016/02/19/10/00/dog-1209621_1280.png" alt="Perrito en adopción"/>
-                            <figcaption>
-                                <h3>Firulais</h3>
-                                <p>Perro mestizo, juguetón y cariñoso.</p>
-                                <a href="page/adopciones.html"><button>Adoptar</button></a>
-                            </figcaption>
-                        </figure>
-                    </td>
-                    <td width="15%" bgcolor="#ffffff">
-                        <figure>
-                            <img width="100%" src="https://cdn.pixabay.com/photo/2014/04/03/10/32/cat-310343_1280.png" alt="Gatito en adopción"/>
-                            <figcaption>
-                                <h3>Michi</h3>
-                                <p>Gato tierno y tranquilo.</p>
-                                <a href="page/adopciones.html"><button>Adoptar</button></a>
-                            </figcaption>
-                        </figure>
-                    </td>
-                    <td width="15%" bgcolor="#ffffff">
-                        <figure>
-                            <img width="100%" src="https://cdn.pixabay.com/photo/2021/05/12/20/31/dog-6248790_1280.jpg" alt="Perrita en adopción"/>
-                            <figcaption>
-                                <h3>Luna</h3>
-                                <p>Perrita rescatada, muy dócil.</p>
-                                <a href="page/adopciones.html"><button>Adoptar</button></a>
-                            </figcaption>
-                        </figure>
-                    </td>
-                    <td width="15%" bgcolor="#ffffff">
-                        <figure>
-                            <img width="100%" src="https://cdn.pixabay.com/photo/2016/01/05/18/02/cat-1121909_1280.jpg" alt="Gatito en adopción"/>
-                            <figcaption>
-                                <h3>Tom</h3>
-                                <p>Juguetón y curioso, ideal para niños.</p>
-                                <a href="page/adopciones.html"><button>Adoptar</button></a>
-                            </figcaption>
-                        </figure>
-                    </td>
+<body>
 
-                    <td width="5%"></td>
-                </tr>
-            </table>
-        </section>
-        
-        <!-- Multimedia y ubicación -->
-        <hr>
-        <section id="section_multimedia">
-            <table width="100%" cellspacing="15px">
-                <tr>
-                    <td width="5%"></td>
-                    <td width="40%" bgcolor="#ffffff">
-                        <figure>
-                            <iframe width="100%" height="350"
-                            src="https://www.youtube.com/embed/0Rlqf9aOaXU"
-                             title="Video rescate animal" 
-                             frameborder="0" 
-                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                             allowfullscreen></iframe> 
-                            <figcaption>
-                                <h3 align="center">Conoce nuestro trabajo</h3>
-                                <p>Historias de rescates exitosos</p>
-                                <a href="https://youtu.be/0Rlqf9aOaXU" target="_blank">
-                                    <button>Ver más</button>
-                                </a>
-                            </figcaption>   
-                        </figure>
-                    </td>
-                    <td width="40%" bgcolor="#ffffff">
-                        <figure>
-                            <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.7750918460316!2d-77.01223782420015!3d-12.13913278808467" 
-                            width="100%" height="350" style="border:0;" 
-                            allowfullscreen="" loading="lazy"></iframe>
-                            <figcaption>
-                                <h3>Ubícanos</h3>
-                                <p>Refugio principal: Lima, Perú</p>
-                                <a href="https://maps.app.goo.gl/sTzjYrtXqkh3YkZz7" target="_blank"><button>Ver en Google Maps</button></a>
-                            </figcaption>
-                        </figure>
-                    </td>
-                    <td width="5%"></td>
-                </tr>
-            </table>
-        </section>
+<header>
+  <div>
+    <img src="dist/imagenes/rescate_animal.jpg" alt="Logo">
+    <h2>Salvando Patitas 🐾</h2>
+  </div>
+  <nav>
+    <a href="#adopciones"><button>🐶 Adopciones</button></a>
+    <a href="#voluntariado"><button>🤝 Voluntariado</button></a>
+    <a href="#historias"><button>🏡 Historias</button></a>
+    <a href="#blog"><button>📰 Blog</button></a>
+    <a href="#donaciones"><button>❤️ Donaciones</button></a>
+    <a href="#contacto"><button>📩 Contacto</button></a>
+  </nav>
+</header>
 
-        <!-- Listado desplegable -->
-        <hr>
-        <section id="section_listado_desplegable">
-            <table width="100%" cellspacing="15px" cellpadding="20px">
-                <tr>
-                    <td width="5%"></td>
-                    <td width="40%" bgcolor="#ffffff">
-                        <details>
-                            <summary>¿Qué es Salvando Patitas?</summary>
-                            <p>Somos un refugio de animales dedicado al rescate y rehabilitación de perros y gatos abandonados.</p>
-                            <h3>Servicios</h3>
-                            <ol>
-                                <li>
-                                    <dl>
-                                        <dt>Adopciones</dt>
-                                        <dd><strong>Horario</strong></dd>
-                                        <dd><mark><i>Lunes a Domingo: 10am - 6pm</i></mark></dd>
-                                        <dd><strong>Incluye</strong></dd>
-                                        <dd>
-                                            <ul>
-                                                <li>Visita guiada al refugio</li>
-                                                <li>Asesoría en adopción</li>
-                                                <li>Seguimiento post-adopción</li>
-                                            </ul>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>Voluntariado</li>
-                                <li>Campañas de esterilización</li>
-                            </ol>
-                            <h3>Horarios</h3>
-                            <ul>
-                                <li>Lunes a Viernes: 10am - 6pm</li>
-                                <li>Sábados y Domingos: 9am - 4pm</li>
-                            </ul>
-                            <h3>Requisitos para adopción</h3>
-                            <dl>
-                                <dt>Adopción Responsable</dt>
-                                <dd>Ser mayor de edad</dd>
-                                <dd>Compromiso de cuidado</dd>
-                                <dd>Visita previa</dd>
-                            </dl>
-                        </details>
-                    </td>
-                    <td width="40%"></td>
-                    <td width="5%"></td>
-                </tr>
-            </table>
-        </section>
-    </main>
+<div class="hero">
+  <h1>¡Bienvenido a Salvando Patitas! 🐾</h1>
+  <p>Refugio dedicado al rescate, cuidado y adopción responsable.</p>
+  <img src="dist/imagenes/perrito_inicio.jpg" alt="Perrito feliz">
+</div>
 
-    <!-- Pie -->
-    <footer bgcolor="#1829A1">
-        <table width="100%" bgcolor="#1829A1">
-            <tr>
-                <td align="center">
-                    <font color="white">&copy; 2025 Salvando Patitas 🐾 | Todos los derechos reservados</font>
-                </td>
-            </tr>
-        </table>
-    </footer>
+<!-- Adopciones -->
+<div class="section" id="adopciones">
+  <h2>🐕 Adopciones Disponibles</h2>
+  <div class="card-container">
+    <div class="card"><img src="dist/imagenes/perro1.jpg"><p>Rocky, lleno de energía.</p><button>Adóptame</button></div>
+    <div class="card"><img src="dist/imagenes/gato1.jpg"><p>Misu, tierna y cariñosa.</p><button>Adóptame</button></div>
+    <div class="card"><video controls><source src="dist/videos/perrito_jugando.mp4" type="video/mp4"></video><p>Mira cómo juegan.</p></div>
+  </div>
+</div>
+
+<!-- Voluntariado -->
+<div class="section" id="voluntariado">
+  <h2>🤝 Voluntariado</h2>
+  <p>Ayúdanos a seguir rescatando vidas.</p>
+  <form>
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo" required>
+    <textarea placeholder="Cuéntanos cómo quieres ayudar"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<!-- Historias Felices -->
+<div class="section" id="historias">
+  <h2>🏡 Historias Felices</h2>
+  <div class="card-container">
+    <div class="card"><img src="dist/imagenes/historia1.jpg"><p>Luna encontró un hogar lleno de amor.</p></div>
+    <div class="card"><img src="dist/imagenes/historia2.jpg"><p>Toby ahora vive feliz con niños.</p></div>
+  </div>
+</div>
+
+<!-- Blog -->
+<div class="section" id="blog">
+  <h2>📰 Blog y Consejos</h2>
+  <div class="card-container">
+    <div class="card"><h3>Cuidados de un cachorro</h3><p>Tips básicos para su bienestar.</p></div>
+    <div class="card"><h3>La importancia de esterilizar</h3><p>Un paso vital para controlar la población.</p></div>
+  </div>
+</div>
+
+<!-- Donaciones -->
+<div class="section" id="donaciones">
+  <h2>❤️ Donaciones</h2>
+  <p>Apóyanos con alimento, medicinas o un aporte económico.</p>
+  <button>Donar Ahora</button>
+</div>
+
+<!-- Contacto -->
+<div class="section" id="contacto">
+  <h2>📩 Contáctanos</h2>
+  <form>
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo" required>
+    <textarea placeholder="Escribe tu mensaje"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<!-- Mapa -->
+<div class="map-container">
+  <h2>📍 Nuestra Ubicación</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8152495622994!2d-77.03652508518795!3d-12.046373091474271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b4f2d53801%3A0x2f7d2a8d3b1f7e4f!2sCongreso%20de%20la%20Rep%C3%BAblica%20del%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1694635800000!5m2!1ses!2spe"></iframe>
+</div>
+
+<footer>
+  <p>&copy; 2025 Salvando Patitas 🐾 | Todos los derechos reservados</p>
+  <div class="social">
+    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">TikTok</a>
+  </div>
+</footer>
+
 </body>
 </html>
